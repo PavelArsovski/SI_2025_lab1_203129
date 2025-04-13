@@ -1,0 +1,15 @@
+*   c0e6efd Merge branch 'count-tasks-per-category' Merge branch 'count-tasks-per-category'
+|\  
+| * 3f33478 Implement removeTaskByName method
+* |   0b8639c Merge pull request #12 from PavelArsovski/filter-tasks-by-category
+|\ \  
+| * | 446b3b0 Implement filterByCategory method
+| |/  
+* |   82944e1 Merge pull request #11 from PavelArsovski/remove-task-by-name
+|\ \  
+| |/  
+|/|   
+| * bdcbd60 Implement removeTaskByName method
+|/  
+* ce33d47 Add starter code
+* dce9382 Initial commit

@@ -1,0 +1,47 @@
+# Иницијализација на локален репозиториум
+git init
+
+# Поврзување со оддалечен (remote) репозиториум
+git remote add origin https://github.com/патека/до/SI_2025_lab1_203129.git
+
+# Додавање на README.md и почетен commit
+git add README.md
+git commit -m "Initial commit"
+git push origin master
+
+# Преземање гранки креирани на GitHub
+git fetch origin
+
+# Префрлање на гранка
+git checkout remove-task-by-name
+
+# Имплементација на метод и commit
+git add SI2025Lab1Main.java
+git commit -m "Implement removeTask method"
+git push origin remove-task-by-name
+
+# Повторно: checkout на следна гранка
+git checkout filter-tasks-by-category
+git add SI2025Lab1Main.java
+git commit -m "Implement filterByCategory method"
+git push origin filter-tasks-by-category
+
+# Checkout на третата гранка
+git checkout count-tasks-per-category
+git add SI2025Lab1Main.java
+git commit -m "Implement countTasksPerCategory method"
+git push origin count-tasks-per-category
+
+# Спојување (merge) на една од гранките локално
+git checkout master
+git merge count-tasks-per-category
+# (се отвори Vim → :wq за да излезеш)
+git push origin master
+
+# Генерирање на git log
+git log --oneline --graph --all > logs.txt
+
+# Финален commit со документација
+git add logs.txt 203129.txt
+git commit -m "Final commit"
+git push origin master
